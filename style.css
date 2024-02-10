@@ -25,17 +25,21 @@ img {
     object-fit: cover;
 }
 
+
 body {
     font-family: var(--ff);
 }
+
 main {
     height: auto;
     padding: 1em;
 }
+
 footer {
     background-color: #333333;
     height: 80px;
 }
+
 /*Estilos pertencientes al Header*/
 .site-header {
     display: flex;
@@ -59,23 +63,23 @@ footer {
     padding: 1em;
 }
 
-
+/*Estilos del nav que tiene la clase menu*/
 .menu {
     display: none;
     transition: all 0.5s ease-in-out;
     z-index: 1000;
 }
-
+/*Listas del menú*/
 .menu li {
-   padding: 10px;
-    
-}
+    padding: 10px;
 
+}
+/*Menú links*/
 .menu a {
     text-decoration: none;
     color: #eee9e9;
 }
-
+/*Botón hamburguesa*/
 .btn-line {
     width: 30px;
     height: 5px;
@@ -83,6 +87,7 @@ footer {
     margin: 3px;
 }
 
+/*Clase para manejar la visibilidad del menu*/
 .active {
     background-color: aliceblue;
     display: block;
@@ -96,7 +101,7 @@ footer {
     padding: 15px;
     height: 100vh;
 }
-
+/*Section hero*/
 .hero {
     color: #0a0909;
     padding: 100px 0;
@@ -132,7 +137,6 @@ footer {
 
 .btn:hover {
     background-color: #0056b3;
-    /* Cambia el color de fondo al pasar el ratón por encima */
 }
 
 /*Estilos de la section de las cards*/
@@ -156,7 +160,7 @@ footer {
     padding-block: 10px;
 }
 
-
+/*Clases alternativas de card para asignarles backgrounds individuales*/
 .bg-one,
 .bg-two,
 .bg-three {
@@ -220,28 +224,128 @@ footer {
     color: #ffff;
 
 }
+
 /*Iconos de redes sociales*/
 .redes-sociales {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
-.redes-sociales-icons  {
+
+.redes-sociales-icons {
     display: flex;
     gap: 30px;
     padding: 10px;
 
 }
+
 .redes-sociales-icons i {
     font-size: 1.4rem;
-  
+
 }
+
 .description {
     color: white;
     font-size: 1rem;
     text-align: center;
     margin-bottom: 10px;
 }
+
+/*Seccion de media queries*/
+
+/*Estilos espedcíficos para pantallas pequeñas en modo paisaje*/
+
+ @media screen and (max-width: 768px) and (orientation: landscape) {
+    
+    .site-header {
+        height: 60px;
+    }
+
+    .menu-btn, 
+    .menu, .active,
+    .redes-sociales {
+        display: none;
+    }
+
+    .content-card {
+        padding: 0.5rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2em;
+    }
+ }
+
+ /*Estilos para tablets*/
+ 
+@media screen and (min-width:768px) and (max-width:1024px) {
+  
+
+   .site-header {
+    height: 80px;
+   }
+
+   .menu {
+    display: block;
+   }
+
+   .menu ul {
+    display: flex;
+
+  }
+  .menu li a {
+    color: #0a0909;
+  }
+   .active, 
+   .menu-btn,
+   .redes-sociales {
+    display: none;
+   }
+
+   .content-card {
+    padding: 1rem;
+   }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .site-header {
+        background-color: transparent;
+
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .menu ul {
+        display: flex;
+
+    }
+
+    .active,
+    .redes-sociales {
+        display: none;
+    }
+
+    .content-card {
+        align-items: center;
+        padding: 3rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        gap: 20px;
+    }
+
+}
+
 /*Estilos para pantallas grandes*/
 .site-header,
 .hero,
@@ -249,39 +353,4 @@ footer {
 footer {
     max-width: 1400px;
     margin-inline: auto;
-}
-
-@media screen and (min-width: 968px) {
-    .site-header {
-        background-color: transparent;
-       
-    }
-    .menu-btn {
-        display: none;
-    }
-    .menu {
-        display: block;
-    }
-    .menu ul {
-        display: flex;
-       
-    }
-    .menu li a {
-        color: #0a0909;
-    }
-    .active,
-    .redes-sociales {
-        display: none;
-    }
-    .content-card {
-        align-items: center;
-        padding: 3rem;
-        display: grid;
-        /* Utiliza CSS Grid para organizar las tarjetas */
-        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-        /* Crea columnas automáticas con un ancho mínimo de 400px */
-        gap: 20px;
-        /* Espacio entre las tarjetas */
-    }
-   
 }
