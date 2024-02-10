@@ -41,7 +41,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--bg-primary);
+    /* background-color: var(--bg-primary); */
     height: 60px;
     position: sticky;
     top: 0;
@@ -78,7 +78,7 @@ footer {
 .btn-line {
     width: 30px;
     height: 2px;
-    background-color: #ccc;
+    background-color: #050505;
     margin: 3px;
 }
 
