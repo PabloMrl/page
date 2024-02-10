@@ -178,8 +178,43 @@ footer {
     text-align: center;
     margin-bottom: 10px;
 }
+
+.buscar-diseñador {
+    background-color: #d6ff0b;
+    height: 50vh;
+    padding: 1em;
+}
+
+.buscar-diseñador h2,
+.buscar-diseñador-texto {
+    padding-block: 1em;
+    text-align: center;
+}
+.contenedor-buscar-btn {
+    display: flex;
+    justify-content: center;
+    padding: 3em;
+    gap: 10px;
+}
+
+.contenedor-buscar-btn button {
+    padding: 10px;
+    width: 130px;
+    border-radius: 50px;
+    border: none;
+}
+.buscar {
+    background-color: #0a0909;
+    color: #ffff;
+}
+
+.saber-mas{
+    background-color: #ffffff;
+    color: #0a0909;
+}
+/*Contenido de los artículos sobre diseños */
 .article-content {
-    padding-block: 3em ;
+    padding-block: 3em;
 }
 
 .article-content img {
@@ -191,21 +226,19 @@ footer {
     text-align: center;
 }
 
-.article-content > p {
-   margin-top: 20px;
-   word-wrap: break-word;
-   
+.article-content>p {
+    margin-top: 20px;
+    word-wrap: break-word;
+
 
 }
 
 
 /*Seccion de media queries*/
 
-/*Estilos espedcíficos para pantallas pequeñas*/
-
 @media screen and (max-width: 768px) {
 
-    /*Estilos pertencientes al Header*/
+
     .site-header {
         display: flex;
         align-items: center;
@@ -219,7 +252,7 @@ footer {
     }
 
     .logo img {
-        
+
         display: block;
         object-fit: cover;
 
@@ -320,7 +353,6 @@ footer {
 
 @media screen and (min-width:768px) and (max-width:1024px) {
 
-
     .site-header {
         height: 80px;
 
@@ -331,16 +363,21 @@ footer {
     .redes-sociales {
         display: none;
     }
-
     .content-card {
         padding: 1rem;
+    }
+    .content-card {
+        align-items: center;
+        padding: 3rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
     }
 }
 
 
-@media screen and (min-width: 1024px) {
- 
- 
+@media screen and (min-width: 770px) and (max-width: 2600px)  {
+
 
     .site-header {
         display: flex;
@@ -379,7 +416,7 @@ footer {
         gap: 20px;
     }
 
-   
+
 }
 
 /*Estilos para pantallas grandes*/
@@ -387,8 +424,9 @@ footer {
 .hero,
 .card-container,
 aside,
+.buscar-diseñador,
 footer {
     max-width: 1400px;
     margin-inline: auto;
-   
+
 }
