@@ -190,6 +190,7 @@ footer {
     padding-block: 1em;
     text-align: center;
 }
+
 .contenedor-buscar-btn {
     display: flex;
     justify-content: center;
@@ -203,15 +204,17 @@ footer {
     border-radius: 50px;
     border: none;
 }
+
 .buscar {
     background-color: #0a0909;
     color: #ffff;
 }
 
-.saber-mas{
+.saber-mas {
     background-color: #ffffff;
     color: #0a0909;
 }
+
 /*Contenido de los artículos sobre diseños */
 .article-content {
     padding-block: 3em;
@@ -359,7 +362,7 @@ footer {
     }
 
     .buscar-diseñador {
-        height: 50vh;
+        height: auto;
     }
 
     .active,
@@ -367,9 +370,11 @@ footer {
     .redes-sociales {
         display: none;
     }
+
     .content-card {
         padding: 1rem;
     }
+
     .content-card {
         align-items: center;
         padding: 3rem;
@@ -380,7 +385,7 @@ footer {
 }
 
 
-@media screen and (min-width: 770px) and (max-width: 2600px)  {
+@media screen and (min-width: 770px) and (max-width: 2600px) {
 
 
     .site-header {
