@@ -62,7 +62,6 @@ footer {
 
 .hero-content p {
     font-size: 1.5em;
-    font-weight: var(--fw-thin);
     margin-bottom: 30px;
 }
 
@@ -186,11 +185,12 @@ footer {
         align-items: center;
         width: 100%;
         justify-content: space-between;
-        border-bottom: chartreuse 2px solid;
+        
         height: 60px;
         position: sticky;
         top: 0;
         z-index: 10;
+        background-color: #f2f1f7d3;
     }
 
     .logo img {
@@ -218,7 +218,7 @@ footer {
         transform: translateX(0)
     }
 
-
+   
     /*Listas del menú*/
     .main-menu li {
         padding: 10px;
@@ -247,12 +247,16 @@ footer {
     }
 
     /*Iconos de redes sociales*/
+
     .redes-sociales {
         display: flex;
         flex-direction: column;
         gap: 30px;
     }
 
+    .redes-sociales h3 {
+        padding-inline: 0.5em;
+    }
     .redes-sociales-icons {
         display: flex;
         gap: 30px;
@@ -264,7 +268,6 @@ footer {
         font-size: 1.4rem;
 
     }
-
 
     .content-card {
         padding: 0.5rem;
