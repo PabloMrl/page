@@ -8,6 +8,7 @@
     --bg-primary: hsl(224, 48%, 22%);
     --bg-secondary: hsl(155, 65%, 75%);
     --clf: #fff;
+    --cl-footer: hsl(0, 5%, 4%);
 }
 
 /*Reset de las propiedades por defecto del navegador*/
@@ -348,9 +349,101 @@ footer {
         font-size: 1.2em;
     }
 
-
-
 }
+footer {
+    background-color: #d6ff0b;
+    color: #0a0909;
+    padding: 2rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1 1 300px;
+    margin-bottom: 1.5rem;
+}
+
+.footer-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-section p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.contact {
+    margin-bottom: 1rem;
+}
+
+.contact span {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.socials a {
+    color: var(--cl-footer);
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.socials a:hover {
+    color: #ccc;
+}
+
+.links ul {
+    list-style: none;
+}
+
+.links ul li {
+    margin-bottom: 0.5rem;
+}
+
+.links ul li a {
+    color: var(--cl-footer);
+}
+
+.links ul li a:hover {
+    color: #ccc;
+}
+
+.contact-form .text-input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form .text-input.contact-input {
+    height: 50px;
+}
+
+.contact-form .btn {
+    display: inline-block;
+    background-color: var(--bg-secondary);
+    color: var(--clf);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form .btn:hover {
+    background-color: #444;
+}
+
+.footer-bottom {
+    margin-top: 2rem;
+    text-align: center;
+}
+
 
 /*Estilos para tablets*/
 
