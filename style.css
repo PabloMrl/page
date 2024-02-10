@@ -30,18 +30,127 @@ body {
     font-family: var(--ff);
 }
 
-main {
-    height: auto;
-    padding: 1em;
-}
 
 footer {
     background-color: #333333;
     height: 80px;
 }
 
+.site-header {
+    position: sticky;
+    top: 0;
+  
+}
 
-/*Section hero*/
+
+/*Seccion de media queries*/
+
+/*Estilos espedcíficos para pantallas pequeñas*/
+
+@media screen and (max-width: 768px) {
+
+    /*Estilos pertencientes al Header*/
+    .site-header {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        height: 60px;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background-color: #f2f1f7d3;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    /*Estilos del nav que tiene la clase menu*/
+    .main-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        padding: 15px;
+        transition: all 0.5s ease-in-out;
+        transform: translateX(100%);
+        z-index: 1000;
+        backdrop-filter: blur(50px);
+    }
+
+    /*Clase para manejar la visibilidad del menu*/
+    .main-menu.active {
+        transform: translateX(0)
+    }
+
+   
+    /*Listas del menú*/
+    .main-menu li {
+        padding: 10px;
+
+    }
+
+    /*Menú links*/
+    .main-menu a {
+        text-decoration: none;
+        color: #0a0909;
+    }
+
+    /*Botón hamburguesa*/
+    .btn-line {
+        width: 30px;
+        height: 5px;
+        background-color: #050505;
+        margin: 3px;
+    }
+
+    .menu-btn {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        padding: 1em;
+    }
+
+    /*Iconos de redes sociales*/
+
+    .redes-sociales {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .redes-sociales h3 {
+        padding-inline: 0.5em;
+    }
+    .redes-sociales-icons {
+        display: flex;
+        gap: 30px;
+        padding: 10px;
+
+    }
+
+    .redes-sociales-icons i {
+        font-size: 1.4rem;
+
+    }
+
+    .content-card {
+        padding: 0.5rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2em;
+    }
+
+    /*Section hero*/
 .hero {
     color: #0a0909;
     padding: 100px 0;
@@ -172,114 +281,6 @@ footer {
     text-align: center;
     margin-bottom: 10px;
 }
-
-/*Seccion de media queries*/
-
-/*Estilos espedcíficos para pantallas pequeñas*/
-
-@media screen and (max-width: 768px) {
-
-    /*Estilos pertencientes al Header*/
-    .site-header {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        justify-content: space-between;
-        
-        height: 60px;
-        position: sticky;
-        top: 0;
-        z-index: 10;
-        background-color: #f2f1f7d3;
-    }
-
-    .logo img {
-        width: 100px;
-    }
-
-    /*Estilos del nav que tiene la clase menu*/
-    .main-menu {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        padding: 15px;
-        transition: all 0.5s ease-in-out;
-        transform: translateX(100%);
-        z-index: 1000;
-        backdrop-filter: blur(50px);
-    }
-
-    /*Clase para manejar la visibilidad del menu*/
-    .main-menu.active {
-        transform: translateX(0)
-    }
-
-   
-    /*Listas del menú*/
-    .main-menu li {
-        padding: 10px;
-
-    }
-
-    /*Menú links*/
-    .main-menu a {
-        text-decoration: none;
-        color: #0a0909;
-    }
-
-    /*Botón hamburguesa*/
-    .btn-line {
-        width: 30px;
-        height: 5px;
-        background-color: #050505;
-        margin: 3px;
-    }
-
-    .menu-btn {
-        display: flex;
-        flex-direction: column;
-        cursor: pointer;
-        padding: 1em;
-    }
-
-    /*Iconos de redes sociales*/
-
-    .redes-sociales {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .redes-sociales h3 {
-        padding-inline: 0.5em;
-    }
-    .redes-sociales-icons {
-        display: flex;
-        gap: 30px;
-        padding: 10px;
-
-    }
-
-    .redes-sociales-icons i {
-        font-size: 1.4rem;
-
-    }
-
-    .content-card {
-        padding: 0.5rem;
-    }
-
-    .hero-content h1 {
-        font-size: 2.rem;
-    }
-
-    .hero-content p {
-        font-size: 1.2em;
-    }
 }
 
 /*Estilos para tablets*/
