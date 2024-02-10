@@ -1,0 +1,271 @@
+:root {
+    --ff: 'Poppins', sans-serif;
+    --font-size: 2rem;
+    --fw-thin: 100;
+    --fw-extralight: 200;
+    --fw-medium: 500;
+    --fw-bold: 700;
+    --bg-primary: hsl(231, 21%, 54%);
+    --bg-secondary: hsl(155, 65%, 75%);
+    --clf: #fff;
+}
+
+/*Reset de las propiedades por defecto del navegador*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+/*Propiedades de imagenes por defecto*/
+img {
+    display: block;
+    object-fit: cover;
+}
+
+body {
+    font-family: var(--ff);
+}
+
+/*Estilos pertencientes al Header*/
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bg-primary);
+    height: 40px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.menu-btn {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+
+.menu {
+    display: none;
+    transition: all 0.5s ease-in-out;
+    z-index: 1000;
+}
+
+.menu li {
+   padding-block: 20px;
+    
+}
+
+.menu a {
+    text-decoration: none;
+    color: #eee9e9;
+}
+
+.btn-line {
+    width: 30px;
+    height: 2gi dpx;
+    background-color: #ccc;
+    margin: 3px;
+}
+
+.active {
+    background-color: aliceblue;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+    padding: 15px;
+    height: 100vh;
+}
+
+.hero {
+    color: #0a0909;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin-inline: auto;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    /* Tamaño del título */
+    margin-bottom: 20px;
+    /* Espaciado inferior */
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    font-weight: var(--fw-thin);
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #02070c;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    /* Cambia el color de fondo al pasar el ratón por encima */
+}
+
+/*Estilos de la section de las cards*/
+.card-container {
+    padding-inline: 2rem;
+    height: auto;
+}
+
+.content-card {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+
+}
+
+.card {
+    width: 100%;
+    position: relative;
+    height: 350px;
+    border-radius: 15px;
+    padding-block: 10px;
+}
+
+
+.bg-one,
+.bg-two,
+.bg-three {
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.bg-one {
+    background-image: url(img/design.png);
+}
+
+.bg-two {
+    background-image: url(img/bg02.png);
+}
+
+.bg-three {
+    background-image: url(img/bg03.png);
+}
+
+.card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    transition: opacity 0.3s;
+    backdrop-filter: blur(5px);
+    padding-bottom: 10px;
+}
+
+.card:hover .card-overlay {
+    opacity: 1;
+}
+
+.container-demierda {
+    display: flex;
+    gap: 10px;
+}
+
+.icon-like-container,
+.save-icon-container {
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    padding: 15px;
+}
+
+.like-icon,
+.save-icon {
+    font-size: .9rem;
+    color: #ffff;
+
+}
+/*Iconos de redes sociales*/
+.redes-sociales {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.redes-sociales-icons  {
+    display: flex;
+    gap: 30px;
+    padding: 10px;
+
+}
+.redes-sociales-icons i {
+    font-size: 1.4rem;
+  
+}
+.description {
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.site-header,
+.hero,
+.card-container {
+    max-width: 1400px;
+    margin-inline: auto;
+}
+
+@media screen and (min-width: 968px) {
+   
+    .menu-btn {
+        display: none;
+    }
+    .menu {
+        display: block;
+    }
+    .menu ul {
+        display: flex;
+    }
+    .active,
+    .redes-sociales {
+        display: none;
+    }
+    .content-card {
+        align-items: center;
+        padding: 3rem;
+        display: grid;
+        /* Utiliza CSS Grid para organizar las tarjetas */
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        /* Crea columnas automáticas con un ancho mínimo de 400px */
+        gap: 20px;
+        /* Espacio entre las tarjetas */
+    }
+   
+}
