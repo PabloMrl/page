@@ -30,11 +30,18 @@ body {
     font-family: var(--ff);
 }
 
+aside {
+    padding-inline: 2em;
+}
+
 
 footer {
     background-color: #333333;
     height: 80px;
+    padding: 1em;
+    color: #fff;
 }
+
 
 .site-header {
     position: sticky;
@@ -89,7 +96,7 @@ footer {
     display: flex;
     gap: 40px;
     flex-direction: column;
-
+    margin-bottom: 30px;
 }
 
 .card {
@@ -172,7 +179,7 @@ footer {
     margin-bottom: 10px;
 }
 .article-content {
-    padding-inline: 2em;
+    padding-block: 3em ;
 }
 
 .article-content img {
@@ -190,6 +197,8 @@ footer {
    
 
 }
+
+
 /*Seccion de media queries*/
 
 /*Estilos espedcíficos para pantallas pequeñas*/
@@ -331,9 +340,7 @@ footer {
 
 @media screen and (min-width: 1024px) {
  
-    body {
-        background-color: #d6ff0b;
-    }
+ 
 
     .site-header {
         display: flex;
@@ -372,11 +379,6 @@ footer {
         gap: 20px;
     }
 
-    aside {
-        background-color: #d6ff0b;
-       
-    }
-  
    
 }
 
@@ -388,5 +390,5 @@ aside,
 footer {
     max-width: 1400px;
     margin-inline: auto;
-    background-color: #ffffff;
+   
 }
