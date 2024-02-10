@@ -358,6 +358,10 @@ footer {
 
     }
 
+    .buscar-diseñador {
+        height: 50vh;
+    }
+
     .active,
     .menu-btn,
     .redes-sociales {
