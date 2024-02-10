@@ -1,3 +1,5 @@
+
+
 document.addEventListener('DOMContentLoaded', function() {
     const menuBtn = document.querySelector('.menu-btn');
     const menu = document.querySelector('.main-menu');
@@ -6,5 +8,3 @@ document.addEventListener('DOMContentLoaded', function() {
       menu.classList.toggle('active');
     });
   });
-  
- 
