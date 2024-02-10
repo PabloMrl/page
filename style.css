@@ -207,7 +207,7 @@ footer {
         height: 100vh;
         padding: 15px;
         transition: all 0.5s ease-in-out;
-        transform: translateX(100%);
+        transform: translateX(-100%);
         z-index: 1000;
         backdrop-filter: blur(50px);
     }
@@ -243,6 +243,7 @@ footer {
         flex-direction: column;
         cursor: pointer;
         padding: 1em;
+        z-index: 1100;
     }
 
     /*Iconos de redes sociales*/
@@ -251,6 +252,7 @@ footer {
         display: flex;
         flex-direction: column;
         gap: 30px;
+      
     }
 
     .redes-sociales h3 {
