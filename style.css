@@ -240,7 +240,9 @@ aside {
     padding-inline: 1rem;
     background-color: rgb(23, 26, 28);
 }
-
+.wrapper-title {
+    color: var(--clf);
+ }
 figure{
  padding: 1rem 0;
  width: 100%;
