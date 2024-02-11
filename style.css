@@ -501,6 +501,9 @@ footer {
     .hero-content p {
         font-size: 1.2em;
     }
+    .wrapper-title {
+        color: var(--clf);
+     }
 
 }
 
