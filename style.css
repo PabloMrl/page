@@ -554,7 +554,8 @@ footer {
         font-weight: 400;
     }
 
-    .contact-form .btn{
+    .contact-form .btn,
+    .hero-content .btn{
         background-color: red;
     }
 }
