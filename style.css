@@ -24,6 +24,7 @@
 img {
     display: block;
     object-fit: cover;
+    max-width: 100%;
 }
 
 
@@ -231,7 +232,6 @@ aside {
 }
 
 /*Estilos correspondientes a la seccion de perfil*/
-
 .wrapper {
     padding-inline: 1rem;
     background-color: rgb(23, 26, 28);
@@ -251,6 +251,7 @@ figure{
 }
 .text-profile, .profile-button-content {
     padding: 1.5rem 0;
+    color: var(--clf);
 }
 .text-profile span, .text-profile h2 {
     line-height: 1.2;
