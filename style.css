@@ -234,6 +234,7 @@ aside {
 
 .wrapper {
     padding-inline: 1rem;
+    background-color: rgb(23, 26, 28);
 }
 
 figure{
@@ -555,10 +556,10 @@ footer {
     .site-header {
         background-color: #444;
     }
-    body {
+    body,
+     .wrapper {
         background-color: #1a1a1a;
     }
-
     footer {
         background-color: #333;
     }
