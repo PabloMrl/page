@@ -20,7 +20,11 @@ window.addEventListener('scroll', () => {
 });
 
 // Desplazarse hacia arriba cuando se hace clic en el botón
-document.getElementById('btnScrollToTop').addEventListener('click', () => {
+btnScrollToTop.addEventListener('click', () => {
   document.body.scrollTop = 0; // Para navegadores que no soportan document.documentElement.scrollTop
   document.documentElement.scrollTop = 0; // Para navegadores compatibles
 });
+
+
+
+
