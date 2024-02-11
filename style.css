@@ -522,13 +522,50 @@ footer {
 
 }
 
+@media (prefers-color-scheme: dark) {
+    /* Estilos para el tema oscuro */
+
+    body {
+        background-color: #1a1a1a;
+    }
+
+    footer {
+        background-color: #333;
+    }
+
+    .links ul li a {
+        color: var(--clf);
+    }
+    
+    .hero-content {
+        padding: 2em;
+    }
+
+    .buscar-diseñador {
+        color: #0a0909;
+    }
+    /*Propiedades compartidas*/
+    body, footer, 
+    .links ul li a,
+    .hero-content,
+    .main-menu a {
+        color: var(--clf);
+        font-weight: 400;
+    }
+
+    .contact-form .btn{
+        background-color: red;
+    }
+}
+
 /*Estilos para pantallas grandes*/
 .site-header,
 .hero,
 .card-container,
 aside,
 .buscar-diseñador,
-footer {
+footer,
+.socials i {
     max-width: 1400px;
     margin-inline: auto;
 
