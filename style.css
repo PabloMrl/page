@@ -547,6 +547,7 @@ footer {
     /*Propiedades compartidas*/
     body, footer, 
     .links ul li a,
+    .socials i,
     .hero-content,
     .main-menu a {
         color: var(--clf);
