@@ -85,7 +85,7 @@ aside {
 
 /*Estilos de la section de las cards*/
 .card-container {
-    padding-inline: 2rem;
+    /* padding-inline: 2rem; */
     height: auto;
 }
 
@@ -240,15 +240,19 @@ aside {
 .wrapper {
     padding-inline: 1rem;
     background-color: rgb(23, 26, 28);
+    margin-bottom: 10px;
 }
 
 .section-profile > h2,
-    .card-container > h2  {
+.card-container > h2  {
         margin-bottom: 20px;
+        margin: 10px;
     }
+
 .wrapper-title {
     color: var(--clf);
  }
+
 figure{
  padding: 1rem 0;
  width: 100%;
@@ -597,7 +601,7 @@ footer {
     }
 
     .hero {
-        height: 50vh;
+        height: auto;
     }
 
     .redes-sociales {
