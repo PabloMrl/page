@@ -25,3 +25,8 @@ btnScrollToTop.addEventListener('click', () => {
   document.documentElement.scrollTop = 0; // Para navegadores compatibles
 });
 
+// Por ejemplo, para agregar un botón de siguiente:
+document.getElementById('nextButton').addEventListener('click', function() {
+  const galleryContainer = document.querySelector('.gallery-container');
+  galleryContainer.scrollBy({ left: galleryContainer.offsetWidth, behavior: 'smooth' });
+});
