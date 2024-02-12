@@ -20,6 +20,57 @@
     text-decoration: none;
 }
 
+/*Tema oscuro configuracion*/
+.theme-switch-wrapper {
+    display: inline-flex;
+    font-size: 0.7rem;
+    margin-right: 30px;
+    
+}
+
+.theme-switch {
+    display: inline-flex;
+    height: 37px;
+    width: 60px;
+    position: relative;
+   
+}
+
+.theme-switch input {
+    display: none ;
+}
+
+.slider-round {
+    background-color: hsl(141, 79%, 30%);
+    border-radius: 34px;
+    cursor: pointer;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    width: 40px;
+}
+
+.slider-round:before {
+    background-color: #ffff;
+    border-radius: 50%;
+    content: "";
+    height: 10px;
+    left: 4px;
+    position: absolute;
+    top: 4px;
+    transition: 0.4s;
+    width: 10px;
+}
+
+input:checked + .slider-round {
+background-color: #2196f3;
+}
+
+input:checked + .slider-round:before {
+    transform: translateX(20px)
+}
+
+
 /*Propiedades de imagenes por defecto*/
 img {
     display: block;
@@ -33,7 +84,7 @@ html{
 
 body {
     font-family: var(--ff);
-    
+    transition: background-color 0.3s ease;
 }
 
 aside {
@@ -107,7 +158,7 @@ aside {
 /*Clases alternativas de card para asignarles backgrounds individuales*/
 .bg-one,
 .bg-two,
-.bg-three {
+.bg-three, .bg-four {
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -447,7 +498,9 @@ footer {
         transform: translateX(0)
     }
 
-
+    .hero {
+        color: #0a0909;
+    }
     /*Listas del menú*/
     .main-menu li {
         padding: 10px;
@@ -513,6 +566,7 @@ footer {
     }
     .wrapper-title {
         color: var(--clf);
+        padding: 0.75em 0;
      }
 
    
@@ -555,10 +609,12 @@ footer {
     }
     .profile-container {
        display: flex;
+       justify-content: center;
     }
     
     .profile {
         flex-direction: row;
+
     }
     .profile img {
         border-radius: 0; 
@@ -568,6 +624,7 @@ footer {
     .section-profile > h2,
     .card-container > h2  {
         text-align: center;
+        
     }
    
 }
@@ -580,7 +637,6 @@ footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border-bottom: #d6ff0b 2px solid;
         z-index: 1001;
         background-color: #333333;
     }
@@ -643,15 +699,23 @@ footer {
        .section-profile > h2,
        .card-container > h2  {
            text-align: center;
+           
        }
 }
-  /* Estilos para el tema oscuro */
-  @media (prefers-color-scheme: dark) {
+
+@media (prefers-color-scheme: dark) {
   
     .site-header {
         background-color: #444;
     }
     body,
+    .card-container
+    {
+        background-color: #02070c;
+    }
+    
+    .hero,
+    aside,
      .wrapper {
         background-color: #1a1a1a;
     }
@@ -685,7 +749,6 @@ footer {
         background-color: red;
     }
 }
-
 /*Estilos para pantallas grandes*/
 .site-header,
 .hero,

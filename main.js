@@ -25,6 +25,3 @@ btnScrollToTop.addEventListener('click', () => {
   document.documentElement.scrollTop = 0; // Para navegadores compatibles
 });
 
-
-
-
