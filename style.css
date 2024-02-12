@@ -464,7 +464,7 @@ footer {
   .gallery {
     display: flex;
     scroll-snap-type: x mandatory;
-    overflow-x: hidden;
+   
   }
   
   .gallery img {
@@ -779,7 +779,8 @@ aside,
 footer,
 .socials i,
 .wrapper,
-.section-profile {
+.section-profile,
+.gallery-container {
     max-width: 1400px;
     margin-inline: auto;
 
