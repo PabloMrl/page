@@ -26,25 +26,3 @@ btnScrollToTop.addEventListener('click', () => {
   document.documentElement.scrollTop = 0; // Para navegadores compatibles
 });
 
-// function scrollGallery() {
-//   const gallery = document.querySelector('.gallery-container');
-//   const galleryWidth = gallery.scrollWidth;
-//   const viewportWidth = gallery.clientWidth;
-//   const scrollLeft = gallery.scrollLeft;
-
-//   // Calcula la posición después de desplazar
-//   let newPosition = scrollLeft + viewportWidth;
-
-//   // Si llega al final, vuelve al principio
-//   if (newPosition >= galleryWidth) {
-//       newPosition = 0;
-//   }
-
-//   // Desplaza la galería
-//   gallery.scroll({
-//       left: newPosition,
-//       behavior: 'smooth'
-//   });
-// }
-
-// setInterval(scrollGallery, 3000); // Desplaza la galería cada 3 segundos (3000 milisegundos)

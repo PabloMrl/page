@@ -272,11 +272,14 @@
       </aside>
       <div class="gallery-container">
         <div class="gallery">
-          <img src="img/bg02.png" alt="">
-          <img src="img/bg03.png" alt="">
-          <img src="img/bg02.png" alt="">
+            <img src="img/bg02.png" alt="Imagen 1">
+            <img src="img/bg03.png" alt="Imagen 2">
+            <img src="img/bg02.png" alt="Imagen 3">
+            <!-- Agrega más imágenes según sea necesario -->
         </div>
-      </div>
+    </div>
+    
+     
     </main>
 
     <footer>
@@ -308,14 +311,17 @@
         </div>
         <div class="footer-section contact-form">
           <h2>Contacto</h2>
-          <form action="#" method="post">
+          <form action="#" id="contact-form" method="post">
             <input
+              id="email"
               type="email"
               name="email"
               class="text-input contact-input"
               placeholder="Tu correo electrónico"
             />
+            <div id="message-error" class="error-message"></div>
             <textarea
+              id="textaArea"
               rows="4"
               name="message"
               class="text-input contact-input"
